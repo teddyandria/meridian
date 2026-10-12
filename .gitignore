@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Notes perso
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Données (réponses brutes de l'API, volumes Postgres)
+data/
+pgdata/
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
