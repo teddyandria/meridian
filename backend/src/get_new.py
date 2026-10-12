@@ -19,9 +19,10 @@ def get_news():
     return response.json()
 
 def store_news(news):
-    location = Path("backend/data/news.json")
+    base = Path(__file__).resolve().parent.parent
+    news_path = base / "data" / "news.json"
     
-    with open(location, "w", encoding="utf-8") as fichier:
+    with open(news_path, "w", encoding="utf-8") as fichier:
         json.dump(news, fichier, ensure_ascii=False, indent=4)
 
 def main():
